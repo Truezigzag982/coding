@@ -1,0 +1,10 @@
+scores0 = (65, 89, 56, 100, 78)
+print('scores0: ', scores0)
+print('min score: ', min(scores0))
+print('max score: ', max(scores0))
+
+sortedlist = sorted(scores0)
+print('  list: ', sortedlist)
+scores = tuple(sortedlist)
+print('scorted: ', scores)
+print('平均成绩为： %.2f' % (sum(scores)/len(scores)))
