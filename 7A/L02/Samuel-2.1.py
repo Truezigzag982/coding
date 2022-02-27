@@ -1,0 +1,5 @@
+puppy =dict(宠物='博美', 年龄='3个月', 体重='0.5kg')
+print(puppy)
+print(puppy['宠物'])
+print(puppy['年龄'])
+print(puppy['体重'])
