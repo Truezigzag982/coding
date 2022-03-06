@@ -7,7 +7,7 @@ def count_words(text):
     return mydict
 
 def main():
-    phargaph = input('pls writs a phargaph:) :  ')
+    phargaph = input('pls type a phargaph:)  ')
     count_words(phargaph)
 
 if __name__ == "__main__":
