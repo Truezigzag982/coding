@@ -1,0 +1,1 @@
+{'aligator': '短吻鳄', 'deer': '鹿', 'giraffe': '长颈鹿', 'jaguar': '美洲豹', 'fish': '鱼'}
