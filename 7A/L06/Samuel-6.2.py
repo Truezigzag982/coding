@@ -19,7 +19,7 @@ def append_dairy(filename, dict_diary):
 
 
 def main():
-    filename = 'thanksgiving_dairy.txt'
+    filename = 'thanksgiving_diary.txt'
     append_dairy(filename, dict_diary1)
 
 

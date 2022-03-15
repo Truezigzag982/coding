@@ -13,7 +13,7 @@ def init_header(filename, dict_data):
         fw.write(header)
 
 def main():
-    filename = 'thanksgiving_dairy.txt'
+    filename = 'thanksgiving_diary.txt'
     init_header(filename, dict_diary1)
 
 if __name__ == '__main__':
