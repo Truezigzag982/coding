@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 
-sg.theme('BluePurple')
+sg.theme('Python')
 layout = [
     [sg.Text('Theme to choose :) \/ \/')],
     [sg.Text('choose a theme, to see what is it like', size=(25, 2))],
