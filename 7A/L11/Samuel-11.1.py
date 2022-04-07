@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 
 sg.theme('Python')
 
-layout = [[sg.Text('ToDo list ofr this week(check after finish (:  )')]]
+layout = [[sg.Text('ToDo list ofr this week (check after finish) :D  ')]]
 
 for i in range(1, 6):
     layout.append([sg.Text(f'{i}. '), sg.CBox(''), sg.Input()])
