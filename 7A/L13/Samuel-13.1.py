@@ -19,4 +19,4 @@ def factorial_sum(n):
 
 n = int(input('A number: '))
 factorial_sum(n)
-#print(f'{factorial_sum(n)}={factorial(n)}')
+#print(f'{n}!={factorial(n)}')
