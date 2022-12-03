@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script type="text/javasctipt" src="calculator.js"></script><
+</head>
+
+<body>
+    <!--    内边距          外边距        边框        居中-->
+    <table cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td colspan="4">
+                <!-- colspan: column span 一个格子占多少列-->
+                <input type="text" value="0" id="t" />
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="number" value="7" onClick="calculate('7')" /></td>
+            <td><input type="button" class="number" value="8" onClick="calculate('8')" /></td>
+            <td><input type="button" class="number" value="9" onClick="calculate('9')" /></td>
+            <td><input type="button" class="signs"  value="/" onClick="calculate('/')" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="number" value="4" onClick="calculate('4')" /></td>
+            <td><input type="button" class="number" value="5" onClick="calculate('5')" /></td>
+            <td><input type="button" class="number" value="6" onClick="calculate('6')" /></td>
+            <td><input type="button" class="signs"  value="X" onClick="calculate('*')" /></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" class="number" value="1" onClick="calculate('1')" /></td>
+            <td><input type="button" class="number" value="2" onClick="calculate('2')" /></td>
+            <td><input type="button" class="number" value="3" onClick="calculate('3')" /></td>
+            <td><input type="button" class="signs"  value="-" onClick="calculate('-')" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="number" value="0" onClick="calculate('0')" /></td>
+            <td><input type="button" class="shaw"   value="." onClick="calculate('.')" /></td>
+            <td><input type="button" class="number" value="00" onClick="calculate('00')" /></td>
+            <td><input type="button" class="signs"  value="+" onClick="calculate('+')" /></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="kuohao" value="(" onClick="calculate('(')" />
+
+                <input type="button" class="kuohao" value=")" onClick="calculate(')')" />
+            </td>
+            <td><input type="button" class="shaw" value="Back" style="float:top" onClick="backspace()" /></td>
+            <td>
+                <input type="button" class="shaw" value="AC/C" onClick="AC()" />
+            </td>
+            <td rowspan="2"><input type="button" value="=" class="equal" onClick="equals()" /></td>
+
+        </tr>
+    </table>
+</body>
+
+</html>

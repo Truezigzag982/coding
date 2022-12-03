@@ -1,0 +1,4 @@
+([('main',
+   '/Users/samuel/Documents/CentrialAcademy/coding/3A/shooting '
+   'airplane/微信飞机大战-复杂版本/dist/main',
+   'EXECUTABLE')],)

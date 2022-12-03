@@ -1,0 +1,30 @@
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: brown;
+    text-align: left;
+}
+
+div {
+    text-align: right;
+    color: yellow;
+    border-style: dashed;
+    border-color: brown;
+    border-width: 2px;
+    background-color: green;
+}
+
+#div1 {
+    margin: 30px;
+    padding: 5px;
+    color: red;
+    text-align: left;
+}
+.div2 {
+    margin: 10px;
+    padding: 5px;
+    color: aqua;
+    text-align: center;
+}

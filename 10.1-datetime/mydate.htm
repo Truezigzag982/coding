@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>显示当前日期和时间</Title>
+    <script src="mydate.js"></script>
+    <link rel="stylesheet" type="text/css" href="date_time.css" />    
+</head>
+</head>
+<body onload="getCurrentTime()">
+    今天是&nbsp;:
+    <span id="curDateSpan">
+        <script type="text/javascript" charset="utf-8">
+            var now = new Date(); 
+            var cur_date = getCurrentDate();
+            console.log(cur_date)
+            document.write(cur_date); 
+            document.write(" "); 
+            var weekdays = new getWeekdays("星期日", "星期一", 
+                "星期二", "星期三", "星期四", "星期五", "星期六");
+            document.write(weekdays[now.getDay()]);
+        </script>
+    </span><br>
+    当前时间：<span id="curTimeSpan" class="timestyle"></span>
+</body>
+</html>
+

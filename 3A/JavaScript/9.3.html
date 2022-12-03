@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>
+            NumberBox
+        </title>
+        <script>
+            function verify_number() {
+                var x = document.getElementById("content").value;
+                //if(isNaN(x) || x.replace(/(^\s*)|(\s*$)/g," ")==" "){
+                if(isNaN(x)){
+                    alert('输入的' + x + '不是数字');
+                }else{
+                    alert('输入的是数字: ' + x);
+                }
+        </script>
+    </head>
+    <body>
+        <p>请输入数字</p> 
+        <input id="content" type="text"> 
+        <button type="button" onclick="verify_number()">查看数字</button>
+    </body>
+</html>
