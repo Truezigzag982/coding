@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>添加宠物</title>
+</head>
+<body>
+<form action="/add_pet/" method="post">
+{% csrf_token %}
+<!-- csrf:一种网站的防护措施
+避免跨站请求伪造, 防止其他人改造或盗取信息-->
+<table>
+<tr>
+<td>宠物名: </td>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<td>宠物介绍: </td>
+<td><input type="text" name="intro"></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="添加"></td>
+</tr>
+<table>
+</form>
+</body>
+</html>

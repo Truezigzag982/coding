@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>显示宠物</title>
+<style>
+td {
+color: rgb(0, 200, 200);
+font-size: 16px;
+}
+</style>
+</head>
+<body>
+<h3>全部宠物信息：</h3>
+<table border="1">
+<tr>
+<th>宠物id</th>
+<th>宠物名</th>
+<th>宠物介绍</th>
+<th>管理操作</th>
+</tr>
+<!--逐个读取宠物对象列表中的对象-->
+{% for pet in pets_list %}
+<tr>
+<!-- pet数据表中的自增编号字段，区分每条记录，可理解为每条宠物记录的身份证号 -->
+<td>{{ pet.id }}</td>
+<td>{{ pet.name }}</td>
+<td>{{ pet.intro }}</td>
+<td>
+<a href="/edit_pet/?id={{ pet.id }}">修改(Update)</a>
+<a href="/delete_pet/?id={{ pet.id }}">删除(Delete)</a>
+</td>
+</tr>
+{% endfor %}
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="/add_pet/">添加(Create)</a></td>
+</tr>
+</table>
+</body>
+</html>

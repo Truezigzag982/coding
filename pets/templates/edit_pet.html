@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>修改宠物</title>
+    </head>
+    <body>
+        <form action="/edit_pet/" method="post">
+        <p>
+        <!-- 注意：宠物的id编号不必显示给用户，所以在网页中隐藏，以便在视图中获取-->
+        <input type="hidden" name="id" value="{{ pet_obj.id }}" />
+        </p>
+        {% csrf_token %}
+        <!-- csrf:跨站请求伪造, 防止其他人改造，盗取信息，是一种网站的防护措施-->
+        <table>
+            <!-- 用无边框的表格，显示更整齐-->
+            <tr>
+            <td>宠物名:</td>
+            <td><input type="text" name="name" value="{{ pet_obj.name }}" /></td>
+            </tr>
+            <tr>
+                <td>宠物介绍:</td>
+                <td>
+                    <!-- 多行文本框，注意宠物介绍的文字内容所放的位置-->
+                    <textarea rows="5" cols="30" name="intro">{{ pet_obj.intro }}</textarea>
+                </td>
+            </tr>
+            <tr>
+            <td></td>
+            <td><input type="submit" value="保存" /></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
